@@ -1,0 +1,150 @@
+PS E:\develop\Python\vueandflask> node -v
+v14.17.0
+PS E:\develop\Python\vueandflask> npm ?version
+
+Usage: npm <command>
+
+where <command> is one of:
+    access, adduser, audit, bin, bugs, c, cache, ci, cit,  
+    clean-install, clean-install-test, completion, config, 
+    create, ddp, dedupe, deprecate, dist-tag, docs, doctor,
+    edit, explore, fund, get, help, help-search, hook, i, init,
+    install, install-ci-test, install-test, it, link, list, ln,
+    login, logout, ls, org, outdated, owner, pack, ping, prefix,
+    profile, prune, publish, rb, rebuild, repo, restart, root,
+    run, run-script, s, se, search, set, shrinkwrap, star,
+    stars, start, stop, t, team, test, token, tst, un,
+    uninstall, unpublish, unstar, up, update, v, version, view,
+    whoami
+
+npm -l            display full usage info
+npm help npm      involved overview
+
+Specify configs in the ini-formatted file:
+    C:\Users\Shige\.npmrc
+or on the command line via: npm <command> --key value
+Config info can be viewed via: npm help config
+
+npm@6.14.13 C:\Program Files\nodejs\node_modules\npm
+
+Did you mean this?
+    version
+PS E:\develop\Python\vueandflask> npm -version
+6.14.13
+PS E:\develop\Python\vueandflask> npm install -g @vue/cli
+npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+npm WARN deprecated @hapi/joi@15.1.1: Switch to 'npm install joi'
+npm WARN deprecated @hapi/hoek@8.5.1: This version has been deprecated and is no longer supported or maintained
+npm WARN deprecated @hapi/address@2.1.4: Moved to 'npm install @sideway/address'
+npm WARN deprecated @hapi/bourne@1.3.2: This version has been deprecated and is no longer supported or maintained
+npm WARN deprecated @hapi/topo@3.1.6: This version has been deprecated and is no longer supported or maintained
+npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm WARN deprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+npm WARN deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+C:\Users\Shige\AppData\Roaming\npm\vue -> C:\Users\Shige\AppData\Roaming\npm\node_modules\@vue\cli\bin\vue.js
+
+> core-js-pure@3.14.0 postinstall C:\Users\Shige\AppData\Roaming\npm\node_modules\@vue\cli\node_modules\core-js-pure
+> node -e "try{require('./postinstall')}catch(e){}"
+
+Thank you for using core-js ( https://github.com/zloirock/core-js ) for polyfilling JavaScript standard library!
+
+The project needs your help! Please consider supporting of core-js on Open Collective or Patreon: 
+> https://opencollective.com/core-js 
+> https://www.patreon.com/zloirock 
+
+
+> @apollo/protobufjs@1.2.2 postinstall C:\Users\Shige\AppData\Roaming\npm\node_modules\@vue\cli\node_modules\@apollo\protobufjs
+> node scripts/postinstall
+
+
+> ejs@2.7.4 postinstall C:\Users\Shige\AppData\Roaming\npm\node_modules\@vue\cli\node_modules\ejs
+> node ./postinstall.js
+
+Thank you for installing EJS: built with the Jake JavaScript build tool (https://jakejs.com/)
+
++ @vue/cli@4.5.13
+added 933 packages from 584 contributors in 64.496s
+PS E:\develop\Python\vueandflask> vue --version
+@vue/cli 4.5.13
+PS E:\develop\Python\vueandflask> vue create frontend
+?  Your connection to the default npm registry seems to be slow.   
+   Use https://registry.npm.taobao.org for faster installation? Yes
+
+
+Vue CLI v4.5.13
+? Please pick a preset: Manually select features
+? Check the features needed for your project: Choose Vue version, Babel, Router, Vuex, Linter
+? Choose a version of Vue.js that you want to start the project with 2.x
+? Use history mode for router? (Requires proper server setup for index fallback in production) Yes
+? Pick a linter / formatter config: Standard
+? Pick additional lint features: Lint on save
+? Where do you prefer placing config for Babel, ESLint, etc.? In dedicated config files
+? Save this as a preset for future projects? No
+
+
+Vue CLI v4.5.13
+✨  Creating project in E:\develop\Python\vueandflask\frontend.
+⚙️  Installing CLI plugins. This might take a while...
+
+
+> yorkie@2.0.0 install E:\develop\Python\vueandflask\frontend\node_modules\yorkie
+> node bin/install.js
+
+setting up Git hooks
+can't find .git directory, skipping Git hooks installation
+
+> core-js@3.14.0 postinstall E:\develop\Python\vueandflask\frontend\node_modules\core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> ejs@2.7.4 postinstall E:\develop\Python\vueandflask\frontend\node_modules\ejs
+> node ./postinstall.js
+
+added 1255 packages from 655 contributors in 60.371s
+
+78 packages are looking for funding
+  run `npm fund` for details
+
+🚀  Invoking generators...
+📦  Installing additional dependencies...
+
+added 121 packages from 56 contributors in 12.897s
+89 packages are looking for funding
+  run `npm fund` for details
+
+⚓  Running completion hooks...
+
+📄  Generating README.md...
+
+
+ $ cd frontend
+ $ npm run serve
+
+PS E:\develop\Python\vueandflask> cd frontenc
+cd : パス 'E:\develop\Python\vueandflask\frontenc' が存在しないため検出できません。
+発生場所 行:1 文字:1
++ cd frontenc
++ ~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (E:\develop\Python\vueandflask\frontenc:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+ 
+PS E:\develop\Python\vueandflask> cd frontend
+PS E:\develop\Python\vueandflask\frontend> npm run serve
+
+> frontend@0.1.0 serve E:\develop\Python\vueandflask\frontend
+> vue-cli-service serve
+
+ INFO  Starting development server...
+98% after emitting CopyPlugin
+
+ DONE  Compiled successfully in 3011ms                                                                                                                                                                  17:05:43
+
+  App running at:
+  - Local:   http://localhost:8080/
+  - Network: http://192.168.0.157:8080/
+
+  Note that the development build is not optimized.
+  To create a production build, run npm run build.
+
+バッチ ジョブを終了しますか (Y/N)? y

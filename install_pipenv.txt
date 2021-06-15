@@ -1,0 +1,183 @@
+PS E:\develop\Python\vueandflask> cd .\backend\; mkdir test
+
+
+    ディレクトリ: E:\develop\Python\vueandflask\backend
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2021/06/15     17:18                test
+
+PS E:\develop\Python\vueandflask\backend> pipenv --python 3.9
+Creating a virtualenv for this project...
+Pipfile: E:\develop\Python\vueandflask\backend\Pipfile
+Using D:/tools/Python/python39/python.exe (3.9.4) to create virtualenv...
+[  ==] Creating virtual environment...created virtual environment CPython3.9.4.final.0-64 in 713ms
+  creator CPython3Windows(dest=C:\Users\Shige\.virtualenvs\backend-S-yr6IGf, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=C:\Users\Shige\AppData\Local\pypa\virtualenv)
+    added seed packages: pip==21.1.2, setuptools==57.0.0, wheel==0.36.2
+  activators BashActivator,BatchActivator,FishActivator,PowerShellActivator,PythonActivator,XonshActivator
+
+Successfully created virtual environment!
+Virtualenv location: C:\Users\Shige\.virtualenvs\backend-S-yr6IGf
+Creating a Pipfile for this project...
+PS E:\develop\Python\vueandflask\backend> pipenv install flask
+Adding flask to Pipfile's [packages]...
+Installation Succeeded
+Pipfile.lock not found, creating...
+Locking [dev-packages] dependencies...
+Locking [packages] dependencies...
+           Building requirements...
+Resolving dependencies...
+Success!
+Updated Pipfile.lock (9536c4)!
+Installing dependencies from Pipfile.lock (9536c4)...
+  ================================ 0/0 - 00:00:00
+To activate this project's virtualenv, run pipenv shell.
+Alternatively, run a command inside the virtualenv with pipenv run.
+PS E:\develop\Python\vueandflask\backend> pipenv install --dev black flake8 rope
+Installing black...
+Adding black to Pipfile's [dev-packages]...
+Installation Succeeded
+Installing flake8...
+Adding flake8 to Pipfile's [dev-packages]...
+Installation Succeeded
+Installing rope...
+Adding rope to Pipfile's [dev-packages]...
+Installation Succeeded
+Pipfile.lock (9536c4) out of date, updating to (4d651b)...
+Locking [dev-packages] dependencies...
+           Building requirements...
+Resolving dependencies...
+Locking Failed!
+[ResolutionFailure]:   File "d:\tools\python\python39\lib\site-packages\pipenv\resolver.py", line 741, in _main
+[ResolutionFailure]:       resolve_packages(pre, clear, verbose, system, write, requirements_dir, packages, dev)
+[ResolutionFailure]:   File "d:\tools\python\python39\lib\site-packages\pipenv\resolver.py", line 702, in resolve_packages
+[ResolutionFailure]:       results, resolver = resolve(
+[ResolutionFailure]:   File "d:\tools\python\python39\lib\site-packages\pipenv\resolver.py", line 684, in resolve
+[ResolutionFailure]:       return resolve_deps(
+[ResolutionFailure]:   File "d:\tools\python\python39\lib\site-packages\pipenv\utils.py", line 1397, in resolve_deps
+[ResolutionFailure]:       results, hashes, markers_lookup, resolver, skipped = actually_resolve_deps(
+[ResolutionFailure]:       resolver.resolve()
+[ResolutionFailure]:   File "d:\tools\python\python39\lib\site-packages\pipenv\utils.py", line 835, in resolve
+[ResolutionFailure]:       raise ResolutionFailure(message=str(e))
+[pipenv.exceptions.ResolutionFailure]: Warning: Your dependencies could not be resolved. You likely have a mismatch in your sub-dependencies.
+  First try clearing your dependency cache with $ pipenv lock --clear, then try the original command again.
+ Alternatively, you can use $ pipenv install --skip-lock to bypass this mechanism, then run $ pipenv graph to inspect the situation.
+  Hint: try $ pipenv lock --pre if it is a pre-release dependency.
+Skipped pre-versions: 18.3a0, 18.3a0, 18.3a1, 18.3a1, 18.3a2, 18.3a2, 18.3a3, 18.3a3, 18.3a4, 18.3a4, 18.4a0, 18.4a0, 18.4a1, 18.4a1, 18.4a2, 18.4a2, 18.4a3, 18.4a3, 18.4a4, 18.4a4, 18.5b0, 18.5b0, 18.5b1, 18.5b1, 18.6b0, 18.6b0, 18.6b1, 18.6b1, 18.6b2, 18.6b2, 18.6b3, 18.6b3, 18.6b4, 18.6b4, 18.9b0, 18.9b0, 19.3b0, 19.3b0, 19.10b0, 19.10b0, 20.8b0, 20.8b1, 21.4b0, 21.4b0, 21.4b1, 21.4b1, 21.4b2, 21.4b2, 21.5b0, 
+21.5b0, 21.5b1, 21.5b1, 21.5b2, 21.5b2, 21.6b0, 21.6b0
+There are incompatible versions in the resolved dependencies:
+
+PS E:\develop\Python\vueandflask\backend> pipenv list
+Usage: pipenv [OPTIONS] COMMAND [ARGS]...
+Try 'pipenv -h' for help.
+
+Error: No such command 'list'.
+
+Did you mean one of these?
+    install
+PS E:\develop\Python\vueandflask\backend> pipenv -h  
+Usage: pipenv [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  --where                         Output project home information.
+  --venv                          Output virtualenv information.
+  --py                            Output Python interpreter information.
+  --envs                          Output Environment Variable options.
+  --rm                            Remove the virtualenv.
+  --bare                          Minimal output.
+  --completion                    Output completion (to be executed by the
+                                  shell).
+
+  --man                           Display manpage.
+  --support                       Output diagnostic information for use in
+                                  GitHub issues.
+
+  --site-packages / --no-site-packages
+                                  Enable site-packages for the virtualenv.
+                                  [env var: PIPENV_SITE_PACKAGES]
+
+  --python TEXT                   Specify which version of Python virtualenv
+                                  should use.
+
+  --three / --two                 Use Python 3/2 when creating virtualenv.
+  --clear                         Clears caches (pipenv, pip, and pip-tools).
+                                  [env var: PIPENV_CLEAR]
+
+  -v, --verbose                   Verbose mode.
+  --pypi-mirror TEXT              Specify a PyPI mirror.
+  --version                       Show the version and exit.
+  -h, --help                      Show this message and exit.
+
+
+Usage Examples:
+   Create a new project using Python 3.7, specifically:
+   $ pipenv --python 3.7
+
+   Remove project virtualenv (inferred from current directory):
+   $ pipenv --rm
+
+   Install all dependencies for a project (including dev):
+   $ pipenv install --dev
+
+   Create a lockfile containing pre-releases:
+   $ pipenv lock --pre
+
+   Show a graph of your installed dependencies:
+   $ pipenv graph
+
+   Check your installed dependencies for security vulnerabilities:
+   $ pipenv check
+
+   Install a local setup.py into your virtual environment/Pipfile:
+   $ pipenv install -e .
+
+   Use a lower-level pip command:
+   $ pipenv run pip freeze
+
+Commands:
+  check      Checks for PyUp Safety security vulnerabilities and against PEP
+             508 markers provided in Pipfile.
+  graph      Displays currently-installed dependency graph information.
+  install    Installs provided packages and adds them to Pipfile, or (if no
+             packages are given), installs all packages from Pipfile.
+
+  lock       Generates Pipfile.lock.
+  open       View a given module in your editor.
+  run        Spawns a command installed into the virtualenv.
+  sync       Installs all packages specified in Pipfile.lock.
+  uninstall  Uninstalls a provided package and removes it from Pipfile.
+  update     Runs lock, then sync.
+PS E:\develop\Python\vueandflask\backend>
+PS E:\develop\Python\vueandflask\backend> cd frontend
+cd : パス 'E:\develop\Python\vueandflask\backend\frontend' が存在しないため検出できません。
+発生場所 行:1 文字:1
++ cd frontend
++ ~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (E:\develop\Pyth...ackend\frontend:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+ 
+PS E:\develop\Python\vueandflask\backend> cd ../;cd frontend
+PS E:\develop\Python\vueandflask\frontend> npm run build
+
+> frontend@0.1.0 build E:\develop\Python\vueandflask\frontend
+> vue-cli-service build
+
+
+/  Building for production...
+
+
+  dist\static\js\chunk-vendors.90e3a8b3.js    133.25 KiB                                                                      46.15 KiB
+  dist\static\js\app.c7a07206.js              6.38 KiB                                                                        2.30 KiB
+  dist\static\js\about.bb5ea8aa.js            0.44 KiB                                                                        0.31 KiB
+  dist\static\css\app.ab586865.css            0.42 KiB                                                                        0.26 KiB
+
+  Images and other types of assets omitted.
+
+ DONE  Build complete. The dist directory is ready to be deployed.
+ INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
+
+PS E:\develop\Python\vueandflask\frontend> cd ../backend    
+PS E:\develop\Python\vueandflask\backend>
+PS E:\develop\Python\vueandflask\backend> pipenv run start
